@@ -1,0 +1,23 @@
+{
+    "name": "test",
+    "build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+
+    // Use 'initializeCommand' to run commands before the container is created.
+    "initializeCommand": [".devcontainer/initializeCommand"],
+
+    // for git submodules: https://docs.github.com/ja/codespaces/managing-your-codespaces/managing-repository-access-for-your-codespaces
+    "customizations": {
+        "codespaces": {
+            "repositories": {
+                "SonySemiconductorSolutions/sdk-public-test-b": {
+                    "permissions": {
+                        "contents": "read"
+                    }
+                }
+            }
+        }
+    }
+}

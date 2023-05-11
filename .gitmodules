@@ -1,0 +1,3 @@
+[submodule "external/test-b"]
+	path = external/test-b
+	url = https://github.com/SonySemiconductorSolutions/sdk-public-test-b.git
